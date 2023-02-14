@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+
+  portal_db:
+    container_name: portal_db
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: db_wordpress
+      MYSQL_USER: usr_wordpress
+      MYSQL_PASSWORD: password
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - 3308:3306
+    networks:
+      - plai
+
+  portal_wordpress:
+    container_name: portal_wordpress
+    depends_on:
+      - portal_db
+    image: wordpress
+    restart: always
+    ports:
+      - 8002:80
+    environment:
+      WORDPRESS_DB_HOST: portal_db
+      WORDPRESS_DB_USER: usr_wordpress
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: db_wordpress
+    volumes:
+      - .:/var/www/html
+    networks:
+      - plai
+
+volumes:
+  .:
+
+networks:
+  plai:
