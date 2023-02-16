@@ -24,20 +24,17 @@ services:
       - portal_db
     image: wordpress
     restart: always
-    ports:
-      - 8002:80
+    volumes:
+      - ./src:/var/www/html
     environment:
       WORDPRESS_DB_HOST: portal_db
+      WORDPRESS_DB_NAME: db_wordpress
       WORDPRESS_DB_USER: usr_wordpress
       WORDPRESS_DB_PASSWORD: password
-      WORDPRESS_DB_NAME: db_wordpress
-    volumes:
-      - .:/var/www/html
+    ports:
+      - 8002:80
     networks:
       - plai
-
-volumes:
-  .:
 
 networks:
   plai:
