@@ -6,7 +6,7 @@
 - [Instalar Docker Compose](https://docs.docker.com/compose/install/).
 
 ### Pasos para ejecutar el proyecto
-1. Descargar la última versión de la rama `develop` de este proyecto.
+1. Descargar la última versión de la rama `master` de este proyecto.
 
 2. Ejecutar desde consola el comando:
 ```bash
