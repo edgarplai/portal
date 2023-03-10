@@ -1,0 +1,63 @@
+0000.015 (R) [notice] Buscando archivo (db), nombre del fichero: backup_2023-03-10-0336_TSJ_en_Lnea_8244229f749e-db.gz
+0000.015 (R) [notice] Tamaño esperado del archivo: 499.2 KB: Ok
+0000.016 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.019 (R) [notice] Descomprimiendo el respaldo... (backup_2023-03-10-0336_TSJ_en_Lnea_8244229f749e-db.gz, 0.5 Mb)
+0000.021 (R) [notice] Restaurando la base de datos... (en sitios grandes podría tardar mucho tiempo - si obtiene errores de exceso de tiempo de ejecución de comandos (timeout), lo que puede pasar si su proveedor de alojamiento (hosting) tiene configurado su alojamiento con recursos limitados, entonces debe usar un método diferente como phpMyAdmin)
+0000.062 (R) [notice] Activando el modo mantenimiento&#8230;
+0000.069 (R) [notice] Copia de seguridad de: http://127.0.0.1:8002
+0000.070 (R) [notice] URL del contenido: http://127.0.0.1:8002/wp-content
+0000.070 (R) [notice] URL de subidas: http://127.0.0.1:8002/wp-content/uploads
+0000.070 (R) [notice] Antiguo prefijo de la tabla: wp_
+0000.070 (R) [notice] Información del sitio: multisite = 0
+0000.071 (R) [notice] Información del sitio: sql_mode = NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.072 (R) [notice] New table prefix: o9_
+0000.078 (R) [notice] Procesando table (InnoDB):  wp_options - se restaurará como: o9_options
+0000.257 (R) [notice] Atomic restore: dropping original table (wp_options)
+0000.266 (R) [notice] Atomic restore: renaming new table (o9_options) to final table name (wp_options)
+0000.295 (R) [notice] Procesando table (InnoDB):  wp_users - se restaurará como: o9_users
+0000.338 (R) [notice] Atomic restore: dropping original table (wp_users)
+0000.350 (R) [notice] Atomic restore: renaming new table (o9_users) to final table name (wp_users)
+0000.358 (R) [notice] Procesando table (InnoDB):  wp_usermeta - se restaurará como: o9_usermeta
+0000.385 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0000.392 (R) [notice] Atomic restore: renaming new table (o9_usermeta) to final table name (wp_usermeta)
+0000.400 (R) [notice] Procesando table (InnoDB):  wp_commentmeta - se restaurará como: o9_commentmeta
+0000.421 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0000.428 (R) [notice] Atomic restore: renaming new table (o9_commentmeta) to final table name (wp_commentmeta)
+0000.437 (R) [notice] Procesando table (InnoDB):  wp_comments - se restaurará como: o9_comments
+0000.467 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0000.473 (R) [notice] Atomic restore: renaming new table (o9_comments) to final table name (wp_comments)
+0000.483 (R) [notice] Procesando table (InnoDB):  wp_links - se restaurará como: o9_links
+0000.506 (R) [notice] Atomic restore: dropping original table (wp_links)
+0000.514 (R) [notice] Atomic restore: renaming new table (o9_links) to final table name (wp_links)
+0000.525 (R) [notice] Procesando table (InnoDB):  wp_postmeta - se restaurará como: o9_postmeta
+0000.718 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0000.725 (R) [notice] Atomic restore: renaming new table (o9_postmeta) to final table name (wp_postmeta)
+0000.735 (R) [notice] Procesando table (InnoDB):  wp_posts - se restaurará como: o9_posts
+0000.869 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0000.878 (R) [notice] Atomic restore: renaming new table (o9_posts) to final table name (wp_posts)
+0000.889 (R) [notice] Procesando table (InnoDB):  wp_term_relationships - se restaurará como: o9_term_relationships
+0000.911 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0000.924 (R) [notice] Atomic restore: renaming new table (o9_term_relationships) to final table name (wp_term_relationships)
+0000.933 (R) [notice] Procesando table (InnoDB):  wp_term_taxonomy - se restaurará como: o9_term_taxonomy
+0000.959 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0000.966 (R) [notice] Atomic restore: renaming new table (o9_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.974 (R) [notice] Procesando table (InnoDB):  wp_termmeta - se restaurará como: o9_termmeta
+0000.995 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0001.002 (R) [notice] Atomic restore: renaming new table (o9_termmeta) to final table name (wp_termmeta)
+0001.010 (R) [notice] Procesando table (InnoDB):  wp_terms - se restaurará como: o9_terms
+0001.032 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0001.038 (R) [notice] Atomic restore: renaming new table (o9_terms) to final table name (wp_terms)
+0001.046 (R) [notice] Procesando table (InnoDB):  wp_e_events - se restaurará como: o9_e_events
+0001.066 (R) [notice] Atomic restore: dropping original table (wp_e_events)
+0001.068 (R) [notice] Database queries processed: 50 in 1.04 seconds
+0001.068 (R) [notice] Atomic restore: renaming new table (o9_e_events) to final table name (wp_e_events)
+0001.076 (R) [notice] Procesando table (InnoDB):  wp_litespeed_url - se restaurará como: o9_litespeed_url
+0001.097 (R) [notice] Atomic restore: dropping original table (wp_litespeed_url)
+0001.098 (R) [notice] Atomic restore: renaming new table (o9_litespeed_url) to final table name (wp_litespeed_url)
+0001.106 (R) [notice] Procesando table (InnoDB):  wp_litespeed_url_file - se restaurará como: o9_litespeed_url_file
+0001.154 (R) [notice] Desactivando el modo mantenimiento&#8230;
+0001.154 (R) [notice] Atomic restore: dropping original table (wp_litespeed_url_file)
+0001.156 (R) [notice] Atomic restore: renaming new table (o9_litespeed_url_file) to final table name (wp_litespeed_url_file)
+0001.167 (R) [notice] Finished: lines processed: 55 in 1.14 seconds
+0001.167 (R) [notice] Limpiando basura...
+0001.197 (R) [notice] Restore successful!
