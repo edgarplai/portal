@@ -1,6 +1,11 @@
-FROM wordpress:apache
-WORKDIR /usr/src/wordpress
-RUN set -eux; \
-	#find /etc/apache2 -name '*.conf' -type f -exec sed -ri -e "s!/var/www/html!$PWD!g" -e "s!Directory /var/www/!Directory $PWD!g" '{}' +; \
-	cp -s wp-config-docker.php wp-config.php
-COPY . .
+FROM wordpress:latest
+
+ADD ./wordpress/wp-content /var/www/html/wp-content
+ADD ./wordpress/wp-config.php /var/www/html/wp-config.php
+ADD ./wordpress/wp-config.php /var/www/html/wp-config-docker.php
+ADD ./wordpress/wp-config.php /var/www/html/.env
+ADD ./wordpress/wp-config.php /var/www/html/.htaccess
+
+WORKDIR /var/www/html
+EXPOSE 80
+CMD ["apache2-foreground"]

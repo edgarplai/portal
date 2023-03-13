@@ -1,0 +1,57 @@
+0000.016 (R) [notice] Buscando archivo (db), nombre del fichero: backup_2023-03-10-0710_TSJ_en_Lnea_8f9a49393e18-db.gz
+0000.016 (R) [notice] Tamaño esperado del archivo: 500.5 KB: Ok
+0000.016 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.019 (R) [notice] Descomprimiendo el respaldo... (backup_2023-03-10-0710_TSJ_en_Lnea_8f9a49393e18-db.gz, 0.5 Mb)
+0000.021 (R) [notice] Restaurando la base de datos... (en sitios grandes podría tardar mucho tiempo - si obtiene errores de exceso de tiempo de ejecución de comandos (timeout), lo que puede pasar si su proveedor de alojamiento (hosting) tiene configurado su alojamiento con recursos limitados, entonces debe usar un método diferente como phpMyAdmin)
+0000.063 (R) [notice] Activando el modo mantenimiento&#8230;
+0000.069 (R) [notice] Copia de seguridad de: http://127.0.0.1:8002
+0000.070 (R) [notice] URL del contenido: http://127.0.0.1:8002/wp-content
+0000.071 (R) [notice] URL de subidas: http://127.0.0.1:8002/wp-content/uploads
+0000.071 (R) [notice] Antiguo prefijo de la tabla: wp_
+0000.071 (R) [notice] Información del sitio: multisite = 0
+0000.071 (R) [notice] Información del sitio: sql_mode = NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.073 (R) [notice] New table prefix: an_
+0000.078 (R) [notice] Procesando table (InnoDB):  wp_options - se restaurará como: an_options
+0000.264 (R) [notice] Atomic restore: dropping original table (wp_options)
+0000.271 (R) [notice] Atomic restore: renaming new table (an_options) to final table name (wp_options)
+0000.299 (R) [notice] Procesando table (InnoDB):  wp_users - se restaurará como: an_users
+0000.327 (R) [notice] Atomic restore: dropping original table (wp_users)
+0000.333 (R) [notice] Atomic restore: renaming new table (an_users) to final table name (wp_users)
+0000.341 (R) [notice] Procesando table (InnoDB):  wp_usermeta - se restaurará como: an_usermeta
+0000.367 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0000.375 (R) [notice] Atomic restore: renaming new table (an_usermeta) to final table name (wp_usermeta)
+0000.384 (R) [notice] Procesando table (InnoDB):  wp_commentmeta - se restaurará como: an_commentmeta
+0000.406 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0000.414 (R) [notice] Atomic restore: renaming new table (an_commentmeta) to final table name (wp_commentmeta)
+0000.422 (R) [notice] Procesando table (InnoDB):  wp_comments - se restaurará como: an_comments
+0000.455 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0000.468 (R) [notice] Atomic restore: renaming new table (an_comments) to final table name (wp_comments)
+0000.482 (R) [notice] Procesando table (InnoDB):  wp_links - se restaurará como: an_links
+0000.510 (R) [notice] Atomic restore: dropping original table (wp_links)
+0000.519 (R) [notice] Atomic restore: renaming new table (an_links) to final table name (wp_links)
+0000.532 (R) [notice] Procesando table (InnoDB):  wp_postmeta - se restaurará como: an_postmeta
+0000.704 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0000.711 (R) [notice] Atomic restore: renaming new table (an_postmeta) to final table name (wp_postmeta)
+0000.719 (R) [notice] Procesando table (InnoDB):  wp_posts - se restaurará como: an_posts
+0000.850 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0000.859 (R) [notice] Atomic restore: renaming new table (an_posts) to final table name (wp_posts)
+0000.869 (R) [notice] Procesando table (InnoDB):  wp_term_relationships - se restaurará como: an_term_relationships
+0000.891 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0000.897 (R) [notice] Atomic restore: renaming new table (an_term_relationships) to final table name (wp_term_relationships)
+0000.904 (R) [notice] Procesando table (InnoDB):  wp_term_taxonomy - se restaurará como: an_term_taxonomy
+0000.925 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0000.931 (R) [notice] Atomic restore: renaming new table (an_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.940 (R) [notice] Procesando table (InnoDB):  wp_termmeta - se restaurará como: an_termmeta
+0000.960 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0000.966 (R) [notice] Atomic restore: renaming new table (an_termmeta) to final table name (wp_termmeta)
+0000.975 (R) [notice] Procesando table (InnoDB):  wp_terms - se restaurará como: an_terms
+0000.997 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0001.003 (R) [notice] Atomic restore: renaming new table (an_terms) to final table name (wp_terms)
+0001.011 (R) [notice] Procesando table (InnoDB):  wp_e_events - se restaurará como: an_e_events
+0001.025 (R) [notice] Database queries processed: 50 in 1.00 seconds
+0001.047 (R) [notice] Desactivando el modo mantenimiento&#8230;
+0001.048 (R) [notice] Atomic restore: dropping original table (wp_e_events)
+0001.049 (R) [notice] Atomic restore: renaming new table (an_e_events) to final table name (wp_e_events)
+0001.057 (R) [notice] Finished: lines processed: 51 in 1.03 seconds
+0001.058 (R) [notice] Limpiando basura...
+0001.077 (R) [notice] Restore successful!

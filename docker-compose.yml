@@ -14,12 +14,14 @@ services:
     ports:
       - '3308:3306'
     networks:
-      - plai
+      plai:
+        ipv4_address: 172.23.0.7
   portal_wordpress:
     container_name: portal_wordpress
     depends_on:
       - portal_db
-    image: wordpress
+    image: plai/portal
+    build: .
     restart: always
     ports:
       - '8002:80'
@@ -29,10 +31,16 @@ services:
       WORDPRESS_DB_PASSWORD: password
       WORDPRESS_DB_NAME: db_wordpress
     volumes:
-      - '.:/var/www/html'
+      - './wordpress:/var/www/html'
     networks:
-      - plai
+      plai:
+        ipv4_address: 172.23.0.6
 volumes:
   .: null
 networks:
-  plai: null
+  plai:
+    external: false
+    name: plai
+    ipam:
+      config:
+        - subnet: 172.23.0.0/16
